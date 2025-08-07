@@ -1,8 +1,11 @@
+// vite.config.js
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  // 👇 Esta línea es esencial para GitHub Pages
+  base: '/registro-medicamentos-oficial/',
   plugins: [
     react(),
     VitePWA({
