@@ -4,8 +4,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  // 👇 Esta línea es esencial para GitHub Pages
-  base: '/registro-medicamentos-oficial/',
+  base: '/registro-medicamentos-oficial/', // 👈 importante para GitHub Pages
   plugins: [
     react(),
     VitePWA({
@@ -14,7 +13,7 @@ export default defineConfig({
       manifest: {
         name: 'Registro de Medicamentos',
         short_name: 'Medicamentos',
-        start_url: '.',
+        start_url: '/registro-medicamentos-oficial/', // 👈 CORREGIDO
         display: 'standalone',
         background_color: '#ffffff',
         theme_color: '#2563eb',
