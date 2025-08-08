@@ -4,18 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Ícono desde public/ -->
-    <link rel="icon" href="/registro-medicamentos-oficial/pwa-192x192.png" />
-
     <meta name="theme-color" content="#2563eb" />
+    <link rel="icon" type="image/png" sizes="192x192" href="pwa-192x192.png" />
+
+    <!-- Base para GitHub Pages -->
     <base href="/registro-medicamentos-oficial/" />
 
     <title>Registro de Medicamentos</title>
 
-    <!-- 🔥 ESTE SCRIPT ES CRUCIAL PARA QUE FUNCIONE -->
-    
-    <script type="module" crossorigin src="/registro-medicamentos-oficial/assets/index-8f952368.js"></script>
-    <link rel="stylesheet" href="/registro-medicamentos-oficial/assets/index-5ca346f2.css">
+    <!-- 🧠 Vite insertará los scripts aquí automáticamente al hacer build -->
+    <link rel="manifest" href="manifest.webmanifest" />
+    <script id="vite-plugin-pwa:register-sw" src="registerSW.js"></script>
   <link rel="manifest" href="/registro-medicamentos-oficial/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registro-medicamentos-oficial/registerSW.js"></script></head>
   <body>
     <div id="root"></div>
