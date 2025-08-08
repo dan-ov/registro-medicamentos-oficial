@@ -3,13 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="pwa-192x192.png" />
+    
+    <!-- Ícono PWA desde carpeta public con ruta absoluta basada en el base -->
+    <link rel="icon" href="/registro-medicamentos-oficial/pwa-192x192.png" />
+
+    <!-- Color de tema para móviles -->
     <meta name="theme-color" content="#2563eb" />
+
+    <!-- Ruta base necesaria para GitHub Pages -->
     <base href="/registro-medicamentos-oficial/" />
+
     <title>Registro de Medicamentos</title>
   <link rel="manifest" href="/registro-medicamentos-oficial/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/registro-medicamentos-oficial/registerSW.js"></script></head>
   <body>
     <div id="root"></div>
-    <!-- El build insertará el JS aquí automáticamente -->
+    <!-- Vite insertará automáticamente los scripts aquí en producción -->
   </body>
 </html>
